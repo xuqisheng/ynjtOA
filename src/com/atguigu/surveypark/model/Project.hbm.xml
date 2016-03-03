@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.atguigu.surveypark.model">
+	<class name="Project" table="projects">
+		<id name="id" column="id" type="integer">
+			<generator class="identity" />
+		</id>
+		<property name="name" column="name" type="string" length="50" />
+		<property name="ptype" column="ptype" type="string" length="50" />
+		<property name="contr_type" column="contr_type" type="string" length="50" />
+		<property name="constr_type" column="constr_type" type="string" length="50" />
+		<property name="remark" column="remark" type="string" length="50" />	
+		<property name="mark" column="mark" type="boolean" />
+		<property name="finish" column="finish" type="boolean" />
+		
+		
+
+	</class>
+</hibernate-mapping>

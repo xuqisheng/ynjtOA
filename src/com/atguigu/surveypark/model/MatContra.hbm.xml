@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+	<class name="com.atguigu.surveypark.model.MatContra" table="matContras">
+		<id name="id" column="id" type="integer">
+			<generator class="identity" />
+		</id>
+		<property name="projectId" column="projectId" type="integer"  />
+		<property name="mat_name" column="mat_name" type="string" length="50" />
+		<property name="contra_num" column="contra_num" type="integer"  />
+		<property name="deal_num" column="deal_num" type="integer"  />
+		<property name="meas_unit" column="meas_unit" type="string" length="50" />
+		<property name="contra_total_price" column="contra_total_price" type="integer"  />
+		<property name="actual_total_price" column="actual_total_price" type="integer"  />
+		<property name="sig_date" column="sig_date" type="string" length="50" />
+		<property name="expi_date" column="expi_date" type="string" length="50"  />
+		<property name="fill_unit" column="fill_unit" type="string" length="50" />
+		<property name="ob_unit" column="ob_unit" type="string" length="50" />
+		<property name="remark" column="remark" type="string" length="50" />	
+        <property name="adopted" column="adopted" type="string" length="50" />
+	</class>
+
+</hibernate-mapping>

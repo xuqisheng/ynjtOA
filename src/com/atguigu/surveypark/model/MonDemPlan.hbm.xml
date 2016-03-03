@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+	<class name="com.atguigu.surveypark.model.MonDemPlan" table="monDemPlans">
+		<id name="id" column="id" type="integer">
+			<generator class="identity" />
+		</id>
+		<property name="projectId" column="projectId" type="integer"  />
+		<property name="pay_cont" column="pay_cont" type="string" length="50" />
+		<property name="pay_num" column="pay_num" type="integer"  />
+		<property name="dem_reas" column="dem_reas" type="string" length="50" />
+		<property name="remark" column="remark" type="string" length="50" />	
+        <property name="adopted" column="adopted" type="string" length="50" />
+	</class>
+	
+</hibernate-mapping>

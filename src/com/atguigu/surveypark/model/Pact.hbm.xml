@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.atguigu.surveypark.model.Pact" table="pacts">
+		<id name="id" column="id" type="integer">
+			<generator class="identity" />
+		</id>
+
+        <property name="projectId" column="projectId" type="integer" />
+		<property name="name" column="name" type="string" length="50" />
+	    <property name="partner" column="partner" type="string" length="50" />
+		<property name="money" column="money" type="integer" />
+		<property name="ptype" column="ptype" type="string" length="50" />
+		<property name="flow" column="flow" type="string" length="50" />
+		<property name="contractor" column="contractor" type="string" length="50" />
+		<property name="undertaker" column="emerdegree" type="string" length="50" />
+		<property name="phone" column="phone" type="string" length="50" />
+		<property name="rev_unit_opi" column="rev_unit_opi" type="string" length="50" />
+		<property name="contr_respon_person" column="contr_respon_person" type="string" length="50" />
+		<property name="contr_sig_date" column="contr_sig_date" type="string" length="50" />
+		<property name="offi_respon_person" column="offi_respon_person" type="string" length="50" />
+		<property name="offi_sig_date" column="offi_sig_date" type="string" length="50" />
+		<property name="fina_respon_person" column="fina_respon_person" type="string" length="50" />
+		<property name="fina_sig_date" column="fina_sig_date" type="string" length="50" />
+		<property name="issuer" column="issuer" type="string" length="50" />
+		<property name="issuer_sig_date" column="issuer_sig_date" type="string" length="50" />
+		<property name="mark" column="mark" type="boolean" />
+	
+	</class>
+</hibernate-mapping>

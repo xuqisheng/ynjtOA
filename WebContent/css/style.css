@@ -1,0 +1,13 @@
+* { margin: 0; padding: 0; font: 16px '微软雅黑';}
+li,ul,ol { list-style: none; }
+
+body.easyui-layout .north { height:60px; background:#B3DFDA; padding:10px; }
+body.easyui-layout .sorth { height:50px; background:#A9FACD; padding:10px; }
+body.easyui-layout .west { width:150px; }
+body.easyui-layout .east { width:100px; padding:10px; }
+
+.north .logo { float: left; }
+.north .sublogo { float: left; font-size: 30px; font-weight: bold; line-height: 2; color: #6666aa;}
+
+.menu .easyui-linkbutton {display: block; text-align: left; }
+.content .easyui-tabs { border: none; }

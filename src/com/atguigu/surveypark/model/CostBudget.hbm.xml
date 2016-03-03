@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+	<class name="com.atguigu.surveypark.model.CostBudget" table="costBudgets">
+		<id name="id" column="id" type="integer">
+			<generator class="identity" />
+		</id>
+		<property name="projectId" column="projectId" type="integer"  />
+		<property name="main_cost" column="main_cost" type="integer"  />
+		<property name="main_pay_type" column="main_pay_type" type="string" length="50" />
+		<property name="lab_subcontr_cost" column="lab_subcontr_cost" type="integer"  />
+		<property name="auxiliary_cost" column="auxiliary_cost" type="integer"  />
+		<property name="land_acq_cost" column="land_acq_cost" type="integer"  />
+		<property name="inst_cost" column="inst_cost" type="integer"  />
+		<property name="manage_cost" column="manage_cost" type="integer"  />
+		<property name="design_cost" column="design_cost" type="integer"  />
+		<property name="tax_cost" column="tax_cost" type="integer"  />
+		<property name="total_cost" column="total_cost" type="integer"  />
+		<property name="remark" column="remark" type="string" length="50" />
+		<property name="mark" column="mark" type="boolean" />	
+
+	</class>
+</hibernate-mapping>
